@@ -31,3 +31,15 @@ Following is the Demo run of the TestGraph.java:
 
 ## Graph Visualization
 ------------
+To display a graph visually, each vertex must be assigned a location. The following `ModelingGraphs` directory introduces how to model a graph using the Graph interface, AbstractGraph class, and UnweightedGraph class. And shows how to display graphs graphically. In order to display a graph, we need to know where each vertex is displayed and the name of each vertex. To ensure a graph can be displayed, we define an interface named Displayable that has the methods for obtaining the x- and y-coordinates and
+their names, and make vertices instances of Displayable.
+  
+The class City is defined to model the vertices with their coordinates and names (lines 39–63). 
+  
+The program creates a graph with the vertices of the City type (line 30). Since City implements Displayable, a GraphView object created for the graph displays the graph in the pane (line 33).
+  
+Output result is as following:
+  
+  ![image](https://user-images.githubusercontent.com/24220136/232974787-69e94426-51c5-4e6d-a78e-60a9c0283474.png)
+
+  
