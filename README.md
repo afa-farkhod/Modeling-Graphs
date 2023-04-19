@@ -28,9 +28,10 @@ The code in lines 164–293 gives the methods for finding a depth-first search t
 Following is the Demo run of the TestGraph.java:
   
 ![image](https://user-images.githubusercontent.com/24220136/232948145-62b42f14-44c7-45c8-88ee-23cfcc67e18f.png)
-
-## Graph Visualization
 ------------
+  
+## Graph Visualization
+
 To display a graph visually, each vertex must be assigned a location. The following `ModelingGraphs` directory introduces how to model a graph using the Graph interface, AbstractGraph class, and UnweightedGraph class. And shows how to display graphs graphically. In order to display a graph, we need to know where each vertex is displayed and the name of each vertex. To ensure a graph can be displayed, we define an interface named Displayable that has the methods for obtaining the x- and y-coordinates and
 their names, and make vertices instances of Displayable.
   
