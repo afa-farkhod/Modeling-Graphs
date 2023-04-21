@@ -57,3 +57,22 @@ Following is the demo run output:
 
 ![image](https://user-images.githubusercontent.com/24220136/233540195-f836f8d6-3105-4bbc-bf50-694e62c3851f.png)
 
+## MST(Minimum Spanning Tree) implementation
+------------
+  
+The `getMinimumSpanningTree` (int v) method is defined in the `WeightedGraph` class. It returns an instance of the MST class. The `MST` class is defined as an inner class in the `WeightedGraph` class, which extends the `Tree` class. The MST class was implemented in
+lines 141–153 in `WeightedGraph` class. Source code `TestMST.java` is located inside the `WeightedGraph directory`.
+  
+  ![image](https://user-images.githubusercontent.com/24220136/233544533-39ea209a-e41f-4016-b84d-ba4bc3de869a.png)
+
+  The `TestMST.java` program creates a weighted graph in line 27. It then invokes getMinimumSpanningTree() (line 28) to return an MST that represents a minimum spanning tree for the graph. Invoking printTree() (line 30) on the MST object displays the edges in the tree. Note that MST is a subclass of Tree. The printTree() method is defined in the Tree class.
+
+  The graphical illustration of the minimum spanning tree is shown in below given Figure. The vertices are added to the tree in this order: Seattle, San Francisco, Los Angeles, Denver, Kansas City, Dallas, Houston, Chicago, New York, Boston, Atlanta, and Miami.
+  
+  ![image](https://user-images.githubusercontent.com/24220136/233544795-1bb76df2-cf54-4989-905f-9de0f05b5d19.png)
+  
+  Demo run output result:
+  
+  ![image](https://user-images.githubusercontent.com/24220136/233544843-da6d7df6-c0e8-4acd-8ea1-0d62b55f0754.png)
+
+  
