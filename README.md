@@ -1,5 +1,5 @@
 # Modeling-Graphs
-Modeling Graphs, Graph interface, AbstractGraph, UnweightedGraph, WeightedGraph, MST(Minimum Spinning Tree)
+Modeling Graphs, Graph interface, AbstractGraph, UnweightedGraph, WeightedGraph, MST(Minimum Spanning Tree)
 
 The `Graph` interface defines the common operations for a graph. The Java Collections Framework serves as a good example for designing complex data structures. The common features of data structures are defined in the interfaces (e.g., Collection, Set, List, Queue), as shown in below Figure. Abstract classes (e.g., AbstractCollection, AbstractSet, AbstractList) partially implement the interfaces. Concrete classes (e.g., HashSet, LinkedHashSet, TreeSet, ArrayList, LinkedList, PriorityQueue) provide concrete implementations. This design pattern is useful for modeling graphs. I will define an interface named Graph that contains all the common operations of graphs and an abstract class named AbstractGraph that partially implements the Graph interface. Many concrete graphs can be added to the design. For example, we will define such graphs named UnweightedGraph and WeightedGraph. The relationships of these interfaces and classes are illustrated in the following Figure.
 
