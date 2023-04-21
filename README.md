@@ -44,4 +44,16 @@ Output result is as following:
   
   ![image](https://user-images.githubusercontent.com/24220136/232974787-69e94426-51c5-4e6d-a78e-60a9c0283474.png)
 
-  
+## Weighted Graph
+------------
+
+`WeightedGraph` simply extends AbstractGraph with five constructors for creating concrete WeightedGraph instances. WeightedGraph inherits all methods from AbstractGraph, overrides the clear and addVertex methods, implements a new addEdge method for adding a weighted edge, and also introduces new methods for obtaining minimum spanning trees and for finding all single-source shortest paths.
+
+![image](https://user-images.githubusercontent.com/24220136/233539981-eeda8a6f-f8a7-4eb1-8c3f-be7e78169d88.png)
+
+WeightedGraph java api is given in following folder: `WeightedGraph`. The WeightedGraph class extends the AbstractGraph class (line 3). The properties vertices and neighbors in AbstractGraph are inherited in WeightedGraph. neighbors is a list. Each element is the list is another list that contains edges. For unweighted graph, each edge is an instance of AbstractGraph.Edge. For a weighted graph, each edge is an instance of WeightedEdge. WeightedEdge is a subtype of Edge. So you can add a weighted edge into neighbors.get(i) for a weighted graph (line 47).
+
+Following is the demo run output:
+
+![image](https://user-images.githubusercontent.com/24220136/233540195-f836f8d6-3105-4bbc-bf50-694e62c3851f.png)
+
