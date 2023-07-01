@@ -59,7 +59,7 @@ their names, and make vertices instances of Displayable.
 - Following is the demo run output:
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/24220136/233540195-f836f8d6-3105-4bbc-bf50-694e62c3851f.png\" alt="Image">
+  <img src="https://user-images.githubusercontent.com/24220136/233540195-f836f8d6-3105-4bbc-bf50-694e62c3851f.png" alt="Image">
 </p>
 
 ## [MST(Minimum Spanning Tree)](https://en.wikipedia.org/wiki/Minimum_spanning_tree)
