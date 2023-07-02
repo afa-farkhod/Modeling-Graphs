@@ -1,7 +1,8 @@
 # [Modeling-Graphs](https://en.wikipedia.org/wiki/Graphical_model)
 Modeling Graphs, Graph interface, AbstractGraph, UnweightedGraph, WeightedGraph, MST(Minimum Spanning Tree)
 
-- The `Graph` interface defines the common operations for a graph. The Java Collections Framework serves as a good example for designing complex data structures. The common features of data structures are defined in the interfaces (e.g., Collection, Set, List, Queue), as shown in below Figure. Abstract classes (e.g., AbstractCollection, AbstractSet, AbstractList) partially implement the interfaces. Concrete classes (e.g., HashSet, LinkedHashSet, TreeSet, ArrayList, LinkedList, PriorityQueue) provide concrete implementations. This design pattern is useful for modeling graphs. I will define an interface named Graph that contains all the common operations of graphs and an abstract class named AbstractGraph that partially implements the Graph interface. Many concrete graphs can be added to the design. For example, we will define such graphs named UnweightedGraph and WeightedGraph. The relationships of these interfaces and classes are illustrated in the following Figure.
+- The `Graph` interface defines the common operations for a graph. The Java Collections Framework serves as a good example for designing complex data structures. The common features of data structures are defined in the interfaces (e.g., Collection, Set, List, Queue), as shown in below Figure. Abstract classes (e.g., AbstractCollection, AbstractSet, AbstractList) partially implement the interfaces. Concrete classes (e.g., HashSet, LinkedHashSet, TreeSet, ArrayList, LinkedList, PriorityQueue) provide concrete implementations.
+-  This design pattern is useful for modeling graphs. I will define an interface named Graph that contains all the common operations of graphs and an abstract class named AbstractGraph that partially implements the Graph interface. Many concrete graphs can be added to the design. For example, we will define such graphs named UnweightedGraph and WeightedGraph. The relationships of these interfaces and classes are illustrated in the following Figure.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24220136/232947173-3b98f5c0-9eca-4252-901f-6e18c25d76fd.png" alt="Image">
@@ -36,7 +37,8 @@ method creates adjacency lists from edges in a list (lines 53–58).
   
 ## [Graph Visualization](https://en.wikipedia.org/wiki/Graph_drawing)
 
-- To display a graph visually, each vertex must be assigned a location. The following `ModelingGraphs` directory introduces how to model a graph using the Graph interface, AbstractGraph class, and UnweightedGraph class. And shows how to display graphs graphically. In order to display a graph, we need to know where each vertex is displayed and the name of each vertex. To ensure a graph can be displayed, we define an interface named Displayable that has the methods for obtaining the x- and y-coordinates and
+- To display a graph visually, each vertex must be assigned a location. The following `ModelingGraphs` directory introduces how to model a graph using the Graph interface, AbstractGraph class, and UnweightedGraph class. And shows how to display graphs graphically.
+- In order to display a graph, we need to know where each vertex is displayed and the name of each vertex. To ensure a graph can be displayed, we define an interface named Displayable that has the methods for obtaining the x- and y-coordinates and
 their names, and make vertices instances of Displayable.
 - The class City is defined to model the vertices with their coordinates and names (lines 39–63).
 - The program creates a graph with the vertices of the City type (line 30). Since City implements Displayable, a `GraphView` object created for the graph displays the graph in the pane (line 33).
@@ -54,7 +56,8 @@ their names, and make vertices instances of Displayable.
   <img src="https://user-images.githubusercontent.com/24220136/233539981-eeda8a6f-f8a7-4eb1-8c3f-be7e78169d88.png" alt="Image">
 </p>
 
-- WeightedGraph java api is given in following folder: `WeightedGraph`. The WeightedGraph class extends the AbstractGraph class (line 3). The properties vertices and neighbors in AbstractGraph are inherited in WeightedGraph. neighbors is a list. Each element is the list is another list that contains edges. For unweighted graph, each edge is an instance of AbstractGraph.Edge. For a weighted graph, each edge is an instance of WeightedEdge. WeightedEdge is a subtype of Edge. So you can add a weighted edge into neighbors.get(i) for a weighted graph (line 47).
+- WeightedGraph java api is given in following folder: `WeightedGraph`. The WeightedGraph class extends the AbstractGraph class (line 3). The properties vertices and neighbors in AbstractGraph are inherited in WeightedGraph. neighbors is a list. Each element is the list is another list that contains edges.
+- For unweighted graph, each edge is an instance of AbstractGraph.Edge. For a weighted graph, each edge is an instance of WeightedEdge. WeightedEdge is a subtype of Edge. So you can add a weighted edge into neighbors.get(i) for a weighted graph (line 47).
 
 - Following is the demo run output:
 
